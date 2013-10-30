@@ -8,6 +8,8 @@
 
 #include "Game.h"
 
+#define GASIA_PS2_MAP "8f0e0000000000000300000000000000,GreenAsia Dualshock 2 Adapter,a:b2,b:b1,y:b0,x:b3,start:b9,back:b8,leftstick:b10,rightstick:b11,leftshoulder:b6,rightshoulder:b7,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,leftx:a0,lefty:a1,rightx:a3,righty:a2,lefttrigger:b4,righttrigger:b5,"
+
 Game::Game(){
     SDL_Init(SDL_INIT_VIDEO | SDL_INIT_GAMECONTROLLER);
     
@@ -15,6 +17,10 @@ Game::Game(){
     
     this->mainWindow = SDL_CreateWindow("Highway Crossing Frog", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, this->width, this->height, SDL_WINDOW_SHOWN);
     this->mainSurface = SDL_GetWindowSurface(this->mainWindow);
+    
+    if(SDL_GameControllerAddMapping(GASIA_PS2_MAP) == 1){
+        printf("Managed to add silly PS2 adapter thing.\n");
+    }
     
     if(SDL_NumJoysticks() > 0){
         for (int i = 0; i < SDL_NumJoysticks(); i++) {
@@ -27,6 +33,8 @@ Game::Game(){
                 }
             }
         }
+    } else {
+        printf("No controllers found.\n");
     }
     
     this->running = true;
@@ -82,6 +90,16 @@ void Game::processEvents(){
                 default:
                     break;
             }
+        }
+    }
+    
+    if (this->gamePad) {
+        this->vKeys.up = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_UP);
+        this->vKeys.down = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_DOWN);
+        this->vKeys.left = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_LEFT);
+        this->vKeys.right = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_RIGHT);
+        if (SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_A)) {
+            this->running = false;
         }
     }
 }
