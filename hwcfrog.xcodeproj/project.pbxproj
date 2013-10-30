@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		90FE7CF118208D23009FBB4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE7CF018208D23009FBB4B /* Cocoa.framework */; };
 		90FE7CFB18208D23009FBB4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7CF918208D23009FBB4B /* InfoPlist.strings */; };
-		90FE7CFD18208D23009FBB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE7CFC18208D23009FBB4B /* main.m */; };
 		90FE7D0118208D23009FBB4B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7CFF18208D23009FBB4B /* Credits.rtf */; };
-		90FE7D0418208D23009FBB4B /* SPWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE7D0318208D23009FBB4B /* SPWAppDelegate.m */; };
-		90FE7D0718208D23009FBB4B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7D0518208D23009FBB4B /* MainMenu.xib */; };
+		90FE7D2518208EB2009FBB4B /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE7D2318208EB2009FBB4B /* SDL2_image.framework */; };
+		90FE7D2618208EB2009FBB4B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE7D2418208EB2009FBB4B /* SDL2.framework */; };
+		90FE7D2918208F0D009FBB4B /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90FE7D2718208F0D009FBB4B /* Game.cpp */; };
+		90FE7D2C18208F2D009FBB4B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90FE7D2A18208F2D009FBB4B /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +24,14 @@
 		90FE7CF518208D23009FBB4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		90FE7CF818208D23009FBB4B /* hwcfrog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hwcfrog-Info.plist"; sourceTree = "<group>"; };
 		90FE7CFA18208D23009FBB4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		90FE7CFC18208D23009FBB4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90FE7CFE18208D23009FBB4B /* hwcfrog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hwcfrog-Prefix.pch"; sourceTree = "<group>"; };
 		90FE7D0018208D23009FBB4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		90FE7D0218208D23009FBB4B /* SPWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWAppDelegate.h; sourceTree = "<group>"; };
-		90FE7D0318208D23009FBB4B /* SPWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWAppDelegate.m; sourceTree = "<group>"; };
-		90FE7D0618208D23009FBB4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		90FE7D2318208EB2009FBB4B /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		90FE7D2418208EB2009FBB4B /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		90FE7D2718208F0D009FBB4B /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		90FE7D2818208F0D009FBB4B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		90FE7D2A18208F2D009FBB4B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		90FE7D2B18208F2D009FBB4B /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FE7D2518208EB2009FBB4B /* SDL2_image.framework in Frameworks */,
+				90FE7D2618208EB2009FBB4B /* SDL2.framework in Frameworks */,
 				90FE7CF118208D23009FBB4B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +51,8 @@
 		90FE7CE418208D23009FBB4B = {
 			isa = PBXGroup;
 			children = (
+				90FE7D2318208EB2009FBB4B /* SDL2_image.framework */,
+				90FE7D2418208EB2009FBB4B /* SDL2.framework */,
 				90FE7CF618208D23009FBB4B /* hwcfrog */,
 				90FE7CEF18208D23009FBB4B /* Frameworks */,
 				90FE7CEE18208D23009FBB4B /* Products */,
@@ -82,10 +89,11 @@
 		90FE7CF618208D23009FBB4B /* hwcfrog */ = {
 			isa = PBXGroup;
 			children = (
-				90FE7D0218208D23009FBB4B /* SPWAppDelegate.h */,
-				90FE7D0318208D23009FBB4B /* SPWAppDelegate.m */,
-				90FE7D0518208D23009FBB4B /* MainMenu.xib */,
 				90FE7CF718208D23009FBB4B /* Supporting Files */,
+				90FE7D2718208F0D009FBB4B /* Game.cpp */,
+				90FE7D2818208F0D009FBB4B /* Game.h */,
+				90FE7D2A18208F2D009FBB4B /* main.cpp */,
+				90FE7D2B18208F2D009FBB4B /* main.h */,
 			);
 			path = hwcfrog;
 			sourceTree = "<group>";
@@ -95,7 +103,6 @@
 			children = (
 				90FE7CF818208D23009FBB4B /* hwcfrog-Info.plist */,
 				90FE7CF918208D23009FBB4B /* InfoPlist.strings */,
-				90FE7CFC18208D23009FBB4B /* main.m */,
 				90FE7CFE18208D23009FBB4B /* hwcfrog-Prefix.pch */,
 				90FE7CFF18208D23009FBB4B /* Credits.rtf */,
 			);
@@ -156,7 +163,6 @@
 			files = (
 				90FE7CFB18208D23009FBB4B /* InfoPlist.strings in Resources */,
 				90FE7D0118208D23009FBB4B /* Credits.rtf in Resources */,
-				90FE7D0718208D23009FBB4B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90FE7CFD18208D23009FBB4B /* main.m in Sources */,
-				90FE7D0418208D23009FBB4B /* SPWAppDelegate.m in Sources */,
+				90FE7D2918208F0D009FBB4B /* Game.cpp in Sources */,
+				90FE7D2C18208F2D009FBB4B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +195,6 @@
 				90FE7D0018208D23009FBB4B /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		90FE7D0518208D23009FBB4B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				90FE7D0618208D23009FBB4B /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -263,6 +261,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hwcfrog/hwcfrog-Prefix.pch";
 				INFOPLIST_FILE = "hwcfrog/hwcfrog-Info.plist";
@@ -275,6 +277,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hwcfrog/hwcfrog-Prefix.pch";
 				INFOPLIST_FILE = "hwcfrog/hwcfrog-Info.plist";
