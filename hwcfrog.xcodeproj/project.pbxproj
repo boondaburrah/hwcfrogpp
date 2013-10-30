@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90FE7CF118208D23009FBB4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE7CF018208D23009FBB4B /* Cocoa.framework */; };
+		90FE7CFB18208D23009FBB4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7CF918208D23009FBB4B /* InfoPlist.strings */; };
+		90FE7CFD18208D23009FBB4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE7CFC18208D23009FBB4B /* main.m */; };
+		90FE7D0118208D23009FBB4B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7CFF18208D23009FBB4B /* Credits.rtf */; };
+		90FE7D0418208D23009FBB4B /* SPWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE7D0318208D23009FBB4B /* SPWAppDelegate.m */; };
+		90FE7D0718208D23009FBB4B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7D0518208D23009FBB4B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90FE7CED18208D23009FBB4B /* hwcfrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hwcfrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FE7CF018208D23009FBB4B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		90FE7CF318208D23009FBB4B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		90FE7CF418208D23009FBB4B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		90FE7CF518208D23009FBB4B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90FE7CF818208D23009FBB4B /* hwcfrog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hwcfrog-Info.plist"; sourceTree = "<group>"; };
+		90FE7CFA18208D23009FBB4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90FE7CFC18208D23009FBB4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90FE7CFE18208D23009FBB4B /* hwcfrog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hwcfrog-Prefix.pch"; sourceTree = "<group>"; };
+		90FE7D0018208D23009FBB4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		90FE7D0218208D23009FBB4B /* SPWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPWAppDelegate.h; sourceTree = "<group>"; };
+		90FE7D0318208D23009FBB4B /* SPWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPWAppDelegate.m; sourceTree = "<group>"; };
+		90FE7D0618208D23009FBB4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90FE7CEA18208D23009FBB4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FE7CF118208D23009FBB4B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90FE7CE418208D23009FBB4B = {
+			isa = PBXGroup;
+			children = (
+				90FE7CF618208D23009FBB4B /* hwcfrog */,
+				90FE7CEF18208D23009FBB4B /* Frameworks */,
+				90FE7CEE18208D23009FBB4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90FE7CEE18208D23009FBB4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90FE7CED18208D23009FBB4B /* hwcfrog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90FE7CEF18208D23009FBB4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90FE7CF018208D23009FBB4B /* Cocoa.framework */,
+				90FE7CF218208D23009FBB4B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90FE7CF218208D23009FBB4B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90FE7CF318208D23009FBB4B /* AppKit.framework */,
+				90FE7CF418208D23009FBB4B /* CoreData.framework */,
+				90FE7CF518208D23009FBB4B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		90FE7CF618208D23009FBB4B /* hwcfrog */ = {
+			isa = PBXGroup;
+			children = (
+				90FE7D0218208D23009FBB4B /* SPWAppDelegate.h */,
+				90FE7D0318208D23009FBB4B /* SPWAppDelegate.m */,
+				90FE7D0518208D23009FBB4B /* MainMenu.xib */,
+				90FE7CF718208D23009FBB4B /* Supporting Files */,
+			);
+			path = hwcfrog;
+			sourceTree = "<group>";
+		};
+		90FE7CF718208D23009FBB4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90FE7CF818208D23009FBB4B /* hwcfrog-Info.plist */,
+				90FE7CF918208D23009FBB4B /* InfoPlist.strings */,
+				90FE7CFC18208D23009FBB4B /* main.m */,
+				90FE7CFE18208D23009FBB4B /* hwcfrog-Prefix.pch */,
+				90FE7CFF18208D23009FBB4B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90FE7CEC18208D23009FBB4B /* hwcfrog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90FE7D0A18208D23009FBB4B /* Build configuration list for PBXNativeTarget "hwcfrog" */;
+			buildPhases = (
+				90FE7CE918208D23009FBB4B /* Sources */,
+				90FE7CEA18208D23009FBB4B /* Frameworks */,
+				90FE7CEB18208D23009FBB4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hwcfrog;
+			productName = hwcfrog;
+			productReference = 90FE7CED18208D23009FBB4B /* hwcfrog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90FE7CE518208D23009FBB4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPW;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Sputwiler;
+			};
+			buildConfigurationList = 90FE7CE818208D23009FBB4B /* Build configuration list for PBXProject "hwcfrog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90FE7CE418208D23009FBB4B;
+			productRefGroup = 90FE7CEE18208D23009FBB4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90FE7CEC18208D23009FBB4B /* hwcfrog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90FE7CEB18208D23009FBB4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FE7CFB18208D23009FBB4B /* InfoPlist.strings in Resources */,
+				90FE7D0118208D23009FBB4B /* Credits.rtf in Resources */,
+				90FE7D0718208D23009FBB4B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90FE7CE918208D23009FBB4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FE7CFD18208D23009FBB4B /* main.m in Sources */,
+				90FE7D0418208D23009FBB4B /* SPWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90FE7CF918208D23009FBB4B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90FE7CFA18208D23009FBB4B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90FE7CFF18208D23009FBB4B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90FE7D0018208D23009FBB4B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		90FE7D0518208D23009FBB4B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90FE7D0618208D23009FBB4B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90FE7D0818208D23009FBB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		90FE7D0918208D23009FBB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		90FE7D0B18208D23009FBB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hwcfrog/hwcfrog-Prefix.pch";
+				INFOPLIST_FILE = "hwcfrog/hwcfrog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90FE7D0C18208D23009FBB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hwcfrog/hwcfrog-Prefix.pch";
+				INFOPLIST_FILE = "hwcfrog/hwcfrog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90FE7CE818208D23009FBB4B /* Build configuration list for PBXProject "hwcfrog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90FE7D0818208D23009FBB4B /* Debug */,
+				90FE7D0918208D23009FBB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90FE7D0A18208D23009FBB4B /* Build configuration list for PBXNativeTarget "hwcfrog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90FE7D0B18208D23009FBB4B /* Debug */,
+				90FE7D0C18208D23009FBB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90FE7CE518208D23009FBB4B /* Project object */;
+}
