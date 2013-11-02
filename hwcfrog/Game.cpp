@@ -105,7 +105,13 @@ void Game::processEvents(){
 }
 
 void Game::gameLoop(){
+    int lastTime = SDL_GetTicks();
+    int now = lastTime;
+    int dtms = 0;
     while(this->running){
+        now = SDL_GetTicks();
+        dtms = lastTime - now;
+        lastTime = now;
         this->processEvents();
     }
 }

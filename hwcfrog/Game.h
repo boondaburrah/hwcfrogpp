@@ -21,7 +21,7 @@ private:
     const int height = 480;
     bool running;
     void processEvents();
-    struct {
+    struct VirtKeys {
         bool up = false;
         bool down = false;
         bool left = false;
