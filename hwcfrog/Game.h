@@ -12,6 +12,7 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "VirtKeys.h"
+#include "GameWorld.h"
 
 class Game{
 private:
@@ -23,6 +24,7 @@ private:
     bool running;
     void processEvents();
     VirtKeys vKeys;
+    GameWorld* gWorld;
 public:
     Game();
     ~Game();

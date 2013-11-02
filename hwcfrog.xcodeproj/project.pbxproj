@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90ACCE9C182494530064E26A /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90ACCE9A182494530064E26A /* GameWorld.cpp */; };
+		90ACCED7182495200064E26A /* bush.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECA182495200064E26A /* bush.bmp */; };
+		90ACCED8182495200064E26A /* car-end.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECB182495200064E26A /* car-end.bmp */; };
+		90ACCED9182495200064E26A /* car-start.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECC182495200064E26A /* car-start.bmp */; };
+		90ACCEDA182495200064E26A /* frog.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECD182495200064E26A /* frog.bmp */; };
+		90ACCEDB182495200064E26A /* log-cont.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECE182495200064E26A /* log-cont.bmp */; };
+		90ACCEDC182495200064E26A /* log-end.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECF182495200064E26A /* log-end.bmp */; };
+		90ACCEDD182495200064E26A /* log-start.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED0182495200064E26A /* log-start.bmp */; };
+		90ACCEDE182495200064E26A /* sidewalk.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED1182495200064E26A /* sidewalk.bmp */; };
+		90ACCEDF182495200064E26A /* truck-cont.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED2182495200064E26A /* truck-cont.bmp */; };
+		90ACCEE0182495200064E26A /* truck-end.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED3182495200064E26A /* truck-end.bmp */; };
+		90ACCEE1182495200064E26A /* truck-start.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED4182495200064E26A /* truck-start.bmp */; };
+		90ACCEE2182495200064E26A /* turtle-down.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED5182495200064E26A /* turtle-down.bmp */; };
+		90ACCEE3182495200064E26A /* turtle-up.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCED6182495200064E26A /* turtle-up.bmp */; };
 		90FE7CF118208D23009FBB4B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FE7CF018208D23009FBB4B /* Cocoa.framework */; };
 		90FE7CFB18208D23009FBB4B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7CF918208D23009FBB4B /* InfoPlist.strings */; };
 		90FE7D0118208D23009FBB4B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90FE7CFF18208D23009FBB4B /* Credits.rtf */; };
@@ -17,6 +31,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90ACCE99182493D40064E26A /* VirtKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtKeys.h; sourceTree = "<group>"; };
+		90ACCE9A182494530064E26A /* GameWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorld.cpp; sourceTree = "<group>"; };
+		90ACCE9B182494530064E26A /* GameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWorld.h; sourceTree = "<group>"; };
+		90ACCECA182495200064E26A /* bush.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = bush.bmp; path = ../bush.bmp; sourceTree = "<group>"; };
+		90ACCECB182495200064E26A /* car-end.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "car-end.bmp"; path = "../car-end.bmp"; sourceTree = "<group>"; };
+		90ACCECC182495200064E26A /* car-start.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "car-start.bmp"; path = "../car-start.bmp"; sourceTree = "<group>"; };
+		90ACCECD182495200064E26A /* frog.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = frog.bmp; path = ../frog.bmp; sourceTree = "<group>"; };
+		90ACCECE182495200064E26A /* log-cont.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "log-cont.bmp"; path = "../log-cont.bmp"; sourceTree = "<group>"; };
+		90ACCECF182495200064E26A /* log-end.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "log-end.bmp"; path = "../log-end.bmp"; sourceTree = "<group>"; };
+		90ACCED0182495200064E26A /* log-start.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "log-start.bmp"; path = "../log-start.bmp"; sourceTree = "<group>"; };
+		90ACCED1182495200064E26A /* sidewalk.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = sidewalk.bmp; path = ../sidewalk.bmp; sourceTree = "<group>"; };
+		90ACCED2182495200064E26A /* truck-cont.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "truck-cont.bmp"; path = "../truck-cont.bmp"; sourceTree = "<group>"; };
+		90ACCED3182495200064E26A /* truck-end.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "truck-end.bmp"; path = "../truck-end.bmp"; sourceTree = "<group>"; };
+		90ACCED4182495200064E26A /* truck-start.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "truck-start.bmp"; path = "../truck-start.bmp"; sourceTree = "<group>"; };
+		90ACCED5182495200064E26A /* turtle-down.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "turtle-down.bmp"; path = "../turtle-down.bmp"; sourceTree = "<group>"; };
+		90ACCED6182495200064E26A /* turtle-up.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = "turtle-up.bmp"; path = "../turtle-up.bmp"; sourceTree = "<group>"; };
 		90FE7CED18208D23009FBB4B /* hwcfrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hwcfrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FE7CF018208D23009FBB4B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		90FE7CF318208D23009FBB4B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -91,9 +121,12 @@
 			children = (
 				90FE7CF718208D23009FBB4B /* Supporting Files */,
 				90FE7D2718208F0D009FBB4B /* Game.cpp */,
+				90ACCE9A182494530064E26A /* GameWorld.cpp */,
+				90ACCE9B182494530064E26A /* GameWorld.h */,
 				90FE7D2818208F0D009FBB4B /* Game.h */,
 				90FE7D2A18208F2D009FBB4B /* main.cpp */,
 				90FE7D2B18208F2D009FBB4B /* main.h */,
+				90ACCE99182493D40064E26A /* VirtKeys.h */,
 			);
 			path = hwcfrog;
 			sourceTree = "<group>";
@@ -101,6 +134,19 @@
 		90FE7CF718208D23009FBB4B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90ACCECA182495200064E26A /* bush.bmp */,
+				90ACCECB182495200064E26A /* car-end.bmp */,
+				90ACCECC182495200064E26A /* car-start.bmp */,
+				90ACCECD182495200064E26A /* frog.bmp */,
+				90ACCECE182495200064E26A /* log-cont.bmp */,
+				90ACCECF182495200064E26A /* log-end.bmp */,
+				90ACCED0182495200064E26A /* log-start.bmp */,
+				90ACCED1182495200064E26A /* sidewalk.bmp */,
+				90ACCED2182495200064E26A /* truck-cont.bmp */,
+				90ACCED3182495200064E26A /* truck-end.bmp */,
+				90ACCED4182495200064E26A /* truck-start.bmp */,
+				90ACCED5182495200064E26A /* turtle-down.bmp */,
+				90ACCED6182495200064E26A /* turtle-up.bmp */,
 				90FE7CF818208D23009FBB4B /* hwcfrog-Info.plist */,
 				90FE7CF918208D23009FBB4B /* InfoPlist.strings */,
 				90FE7CFE18208D23009FBB4B /* hwcfrog-Prefix.pch */,
@@ -163,6 +209,19 @@
 			files = (
 				90FE7CFB18208D23009FBB4B /* InfoPlist.strings in Resources */,
 				90FE7D0118208D23009FBB4B /* Credits.rtf in Resources */,
+				90ACCED7182495200064E26A /* bush.bmp in Resources */,
+				90ACCED8182495200064E26A /* car-end.bmp in Resources */,
+				90ACCED9182495200064E26A /* car-start.bmp in Resources */,
+				90ACCEDA182495200064E26A /* frog.bmp in Resources */,
+				90ACCEDB182495200064E26A /* log-cont.bmp in Resources */,
+				90ACCEDC182495200064E26A /* log-end.bmp in Resources */,
+				90ACCEDD182495200064E26A /* log-start.bmp in Resources */,
+				90ACCEDE182495200064E26A /* sidewalk.bmp in Resources */,
+				90ACCEDF182495200064E26A /* truck-cont.bmp in Resources */,
+				90ACCEE0182495200064E26A /* truck-end.bmp in Resources */,
+				90ACCEE1182495200064E26A /* truck-start.bmp in Resources */,
+				90ACCEE2182495200064E26A /* turtle-down.bmp in Resources */,
+				90ACCEE3182495200064E26A /* turtle-up.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +234,7 @@
 			files = (
 				90FE7D2918208F0D009FBB4B /* Game.cpp in Sources */,
 				90FE7D2C18208F2D009FBB4B /* main.cpp in Sources */,
+				90ACCE9C182494530064E26A /* GameWorld.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +368,7 @@
 				90FE7D0C18208D23009FBB4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

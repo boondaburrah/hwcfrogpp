@@ -37,11 +37,15 @@ Game::Game(){
         printf("No controllers found.\n");
     }
     
+    this->gWorld = new GameWorld();
+    
     this->running = true;
 }
 
 Game::~Game(){
     SDL_GameControllerClose(this->gamePad);
+    
+    delete this->gWorld;
     
     SDL_DestroyWindow(this->mainWindow);
     this->mainWindow = NULL;
@@ -113,5 +117,7 @@ void Game::gameLoop(){
         dtms = lastTime - now;
         lastTime = now;
         this->processEvents();
+        this->gWorld->tick(dtms, vKeys);
+        this->gWorld->draw();
     }
 }
