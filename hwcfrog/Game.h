@@ -17,7 +17,7 @@
 class Game{
 private:
     SDL_Window* mainWindow = NULL;
-    SDL_Surface* mainSurface = NULL;
+    SDL_Renderer* mainRenderer = NULL;
     SDL_GameController* gamePad = NULL;
     const int width = 320;
     const int height = 480;

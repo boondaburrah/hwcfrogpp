@@ -16,7 +16,8 @@ Game::Game(){
     SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1");
     
     this->mainWindow = SDL_CreateWindow("Highway Crossing Frog", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, this->width, this->height, SDL_WINDOW_SHOWN);
-    this->mainSurface = SDL_GetWindowSurface(this->mainWindow);
+    
+    this->mainRenderer = SDL_CreateRenderer(this->mainWindow, -1, SDL_RENDERER_ACCELERATED);
     
     if(SDL_GameControllerAddMapping(GASIA_PS2_MAP) == 1){
         printf("Managed to add silly PS2 adapter thing.\n");
@@ -47,6 +48,7 @@ Game::~Game(){
     
     delete this->gWorld;
     
+    SDL_DestroyRenderer(this->mainRenderer);
     SDL_DestroyWindow(this->mainWindow);
     this->mainWindow = NULL;
     
@@ -102,7 +104,7 @@ void Game::processEvents(){
         this->vKeys.down = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_DOWN);
         this->vKeys.left = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_LEFT);
         this->vKeys.right = SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_DPAD_RIGHT);
-        if (SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_A)) {
+        if (SDL_GameControllerGetButton(this->gamePad, SDL_CONTROLLER_BUTTON_BACK)) {
             this->running = false;
         }
     }

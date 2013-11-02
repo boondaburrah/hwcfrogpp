@@ -16,7 +16,7 @@
 #include "VirtKeys.h"
 
 class GameWorld {
-    std::unordered_map<std::string, SDL_Texture> sprites;
+    std::unordered_map<std::string, SDL_Texture*> sprites;
 public:
     GameWorld();
     ~GameWorld();
