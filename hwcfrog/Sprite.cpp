@@ -12,6 +12,10 @@ Sprite::Sprite(){
     
 }
 
+Sprite::Sprite(SDL_Renderer* ren, std::string fn){
+    this->loadImage(ren, fn);
+}
+
 Sprite::~Sprite(){
     if(this->texture){
         SDL_DestroyTexture(this->texture);

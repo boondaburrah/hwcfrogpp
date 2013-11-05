@@ -12,8 +12,7 @@ GameWorld::GameWorld(SDL_Renderer* renderer){
     this->renderer = renderer;
     // dunno what do here yet.
     // gonna hard-code a shit-tonne of sprites, bear with me.
-    this->sprites["turtleUp"] = *new Sprite;
-    this->sprites["turtleUp"].loadImage(this->renderer, "../Resources/turtle-up.bmp");
+    this->sprites["turtleUp"] = *new Sprite(this->renderer, "../Resources/turtle-up.bmp");
 }
 
 GameWorld::~GameWorld(){

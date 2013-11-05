@@ -18,6 +18,7 @@ class Sprite {
     SDL_Rect rect;
 public:
     Sprite();
+    Sprite(SDL_Renderer*, std::string);
     ~Sprite();
     void loadImage(SDL_Renderer*, std::string);
     void draw(SDL_Renderer*, int, int);
