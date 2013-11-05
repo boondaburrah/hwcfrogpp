@@ -38,7 +38,7 @@ Game::Game(){
         printf("No controllers found.\n");
     }
     
-    this->gWorld = new GameWorld();
+    this->gWorld = new GameWorld(this->mainRenderer);
     
     this->running = true;
 }

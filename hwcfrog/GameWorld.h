@@ -14,11 +14,13 @@
 #include <unordered_map>
 #include <string.h>
 #include "VirtKeys.h"
+#include "Sprite.h"
 
 class GameWorld {
-    std::unordered_map<std::string, SDL_Texture*> sprites;
+    std::unordered_map<std::string, Sprite> sprites;
+    SDL_Renderer* renderer;
 public:
-    GameWorld();
+    GameWorld(SDL_Renderer*);
     ~GameWorld();
     void draw();
     void tick(int, VirtKeys);
