@@ -24,6 +24,8 @@ public:
     ~GameWorld();
     void draw();
     void tick(int, VirtKeys);
+private:
+    void drawBackground();
 };
 
 #endif /* defined(__hwcfrog__GameWorld__) */

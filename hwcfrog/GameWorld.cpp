@@ -10,7 +10,7 @@
 
 GameWorld::GameWorld(SDL_Renderer* renderer){
     this->renderer = renderer;
-    // dunno what do here yet.
+    
     // gonna hard-code a shit-tonne of sprites, bear with me.
     this->sprites["turtleUp"] = *new Sprite(this->renderer, "../Resources/turtle-up.bmp");
     this->sprites["turtleDown"] = *new Sprite(this->renderer, "../Resources/turtle-down.bmp");
@@ -34,7 +34,8 @@ GameWorld::~GameWorld(){
 void GameWorld::draw(){
     // jack shit to draw at the moment.
     SDL_RenderClear(this->renderer);
-    this->sprites["turtleUp"].draw(this->renderer, 0, 0);
+    //this->sprites["turtleUp"].draw(this->renderer, 0, 0);
+    this->drawBackground();
     SDL_RenderPresent(this->renderer);
 }
 
@@ -42,3 +43,17 @@ void GameWorld::tick(int dt, VirtKeys vk){
     
 }
 
+void GameWorld::drawBackground(){
+    SDL_SetRenderDrawColor(this->renderer, 0x00, 0x00, 0xCC, 0xFF);
+    SDL_Rect rect;
+    rect.x = 0;
+    rect.y = 32;
+    rect.w = 320;
+    rect.h = 192;
+    SDL_RenderFillRect(this->renderer, &rect);
+    SDL_SetRenderDrawColor(this->renderer, 0x00, 0x00, 0x00, 0xFF);
+    for (int i = 0; i < 320; i += 32) {
+        this->sprites["bush"].draw(this->renderer, i, 32);
+        this->sprites["sidewalk"].draw(this->renderer, i, 224);
+    }
+}
