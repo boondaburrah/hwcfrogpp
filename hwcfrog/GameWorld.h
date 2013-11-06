@@ -15,15 +15,17 @@
 #include <string.h>
 #include "VirtKeys.h"
 #include "Sprite.h"
+#include "Frog.h"
 
 class GameWorld {
     std::unordered_map<std::string, Sprite> sprites;
     SDL_Renderer* renderer;
+    Frog* frog;
 public:
     GameWorld(SDL_Renderer*);
     ~GameWorld();
     void draw();
-    void tick(int, VirtKeys);
+    void tick(int, VirtKeys*);
 private:
     void drawBackground();
 };

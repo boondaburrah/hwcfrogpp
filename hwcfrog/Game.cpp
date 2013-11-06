@@ -119,7 +119,7 @@ void Game::gameLoop(){
         dtms = lastTime - now;
         lastTime = now;
         this->processEvents();
-        this->gWorld->tick(dtms, vKeys);
+        this->gWorld->tick(dtms, &vKeys);
         this->gWorld->draw();
     }
 }

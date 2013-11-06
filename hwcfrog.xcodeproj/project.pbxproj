@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E9A0CA51828C09A001D323D /* Frog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E9A0CA31828C09A001D323D /* Frog.cpp */; };
 		9090291D18287FD700265EFE /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9090291B18287FD700265EFE /* Sprite.cpp */; };
 		90ACCE9C182494530064E26A /* GameWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90ACCE9A182494530064E26A /* GameWorld.cpp */; };
 		90ACCED7182495200064E26A /* bush.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 90ACCECA182495200064E26A /* bush.bmp */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E9A0CA31828C09A001D323D /* Frog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Frog.cpp; sourceTree = "<group>"; };
+		1E9A0CA41828C09A001D323D /* Frog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frog.h; sourceTree = "<group>"; };
 		9090291B18287FD700265EFE /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
 		9090291C18287FD700265EFE /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		90ACCE99182493D40064E26A /* VirtKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VirtKeys.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				90FE7D2818208F0D009FBB4B /* Game.h */,
 				90ACCE9A182494530064E26A /* GameWorld.cpp */,
 				90ACCE9B182494530064E26A /* GameWorld.h */,
+				1E9A0CA31828C09A001D323D /* Frog.cpp */,
+				1E9A0CA41828C09A001D323D /* Frog.h */,
 				9090291B18287FD700265EFE /* Sprite.cpp */,
 				9090291C18287FD700265EFE /* Sprite.h */,
 				90FE7D2A18208F2D009FBB4B /* main.cpp */,
@@ -241,6 +246,7 @@
 				90FE7D2C18208F2D009FBB4B /* main.cpp in Sources */,
 				90ACCE9C182494530064E26A /* GameWorld.cpp in Sources */,
 				9090291D18287FD700265EFE /* Sprite.cpp in Sources */,
+				1E9A0CA51828C09A001D323D /* Frog.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

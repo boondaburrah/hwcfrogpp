@@ -25,10 +25,14 @@ GameWorld::GameWorld(SDL_Renderer* renderer){
     this->sprites["bush"] = *new Sprite(this->renderer, "../Resources/bush.bmp");
     this->sprites["sidewalk"] = *new Sprite(this->renderer, "../Resources/sidewalk.bmp");
     this->sprites["frog"] = *new Sprite(this->renderer, "../Resources/frog.bmp");
+    
+    this->frog = new Frog(&this->sprites["frog"]);
 }
 
 GameWorld::~GameWorld(){
+    delete this->frog;
     this->renderer = NULL;
+    this->sprites.clear();
 }
 
 void GameWorld::draw(){
@@ -36,10 +40,11 @@ void GameWorld::draw(){
     SDL_RenderClear(this->renderer);
     //this->sprites["turtleUp"].draw(this->renderer, 0, 0);
     this->drawBackground();
+    this->frog->draw(this->renderer);
     SDL_RenderPresent(this->renderer);
 }
 
-void GameWorld::tick(int dt, VirtKeys vk){
+void GameWorld::tick(int dt, VirtKeys* vk){
     
 }
 
