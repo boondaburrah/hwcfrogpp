@@ -22,16 +22,16 @@ Frog::~Frog(){
 void Frog::tick(int dt, VirtKeys* vKeys){
     double pixelsToMove = (200*dt)/1000;
     if (vKeys->up) {
-        this->y -= pixelsToMove;
-    }
-    if (vKeys->down) {
         this->y += pixelsToMove;
     }
+    if (vKeys->down) {
+        this->y -= pixelsToMove;
+    }
     if (vKeys->left) {
-        this->x -= pixelsToMove;
+        this->x += pixelsToMove;
     }
     if (vKeys->right) {
-        this->x += pixelsToMove;
+        this->x -= pixelsToMove;
     }
 }
 

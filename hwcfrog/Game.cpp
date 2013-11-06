@@ -9,6 +9,7 @@
 #include "Game.h"
 
 #define GASIA_PS2_MAP "8f0e0000000000000300000000000000,GreenAsia Dualshock 2 Adapter,a:b2,b:b1,y:b0,x:b3,start:b9,back:b8,leftstick:b10,rightstick:b11,leftshoulder:b6,rightshoulder:b7,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,leftx:a0,lefty:a1,rightx:a3,righty:a2,lefttrigger:b4,righttrigger:b5,"
+#define GASIA_PS2_LIN "030000008f0e00000300000010010000,GreenAsia Dualshock 2 Adapter Linux,a:b2,b:b1,y:b0,x:b3,start:b9,back:b8,leftstick:b10,rightstick:b11,leftshoulder:b6,rightshoulder:b7,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,leftx:a0,lefty:a1,rightx:a3,righty:a2,lefttrigger:b4,righttrigger:b5,"
 
 Game::Game(){
     SDL_Init(SDL_INIT_VIDEO | SDL_INIT_GAMECONTROLLER);
@@ -21,6 +22,9 @@ Game::Game(){
     
     if(SDL_GameControllerAddMapping(GASIA_PS2_MAP) == 1){
         printf("Managed to add silly PS2 adapter thing.\n");
+    }
+    if(SDL_GameControllerAddMapping(GASIA_PS2_LIN) == 1){
+        printf("Managed to add silly PS2 adapter thing on Linux.\n");
     }
     
     if(SDL_NumJoysticks() > 0){

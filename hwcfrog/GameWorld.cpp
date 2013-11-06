@@ -45,7 +45,7 @@ void GameWorld::draw(){
 }
 
 void GameWorld::tick(int dt, VirtKeys* vk){
-    
+    this->frog->tick(dt, vk);
 }
 
 void GameWorld::drawBackground(){
