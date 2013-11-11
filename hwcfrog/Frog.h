@@ -9,6 +9,9 @@
 #ifndef __hwcfrog__Frog__
 #define __hwcfrog__Frog__
 
+#define FROG_START_X 144
+#define FROG_START_Y 416
+
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "Sprite.h"
@@ -24,6 +27,7 @@ public:
     ~Frog();
     void tick(int, VirtKeys*);
     void draw(SDL_Renderer*);
+    void die();
 };
 
 #endif /* defined(__hwcfrog__Frog__) */

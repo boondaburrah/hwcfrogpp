@@ -11,8 +11,8 @@
 Frog::Frog(Sprite* sprite){
     this->sprite = sprite;
     this->lives = 6;
-    this->x = 144;
-    this->y = 416;
+    this->x = FROG_START_X;
+    this->y = FROG_START_Y;
 }
 
 Frog::~Frog(){
@@ -42,4 +42,10 @@ void Frog::draw(SDL_Renderer* renderer){
         this->sprite->draw(renderer, i*32, 0);
     }
     this->sprite->draw(renderer, drawx, drawy);
+}
+
+void Frog::die(){
+    this->x = FROG_START_X;
+    this->y = FROG_START_Y;
+    this->lives--;
 }
