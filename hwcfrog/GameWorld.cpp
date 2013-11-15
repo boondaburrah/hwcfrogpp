@@ -27,6 +27,7 @@ GameWorld::GameWorld(SDL_Renderer* renderer){
     this->sprites["frog"] = *new Sprite(this->renderer, "../Resources/frog.bmp");
     
     this->frog = new Frog(&this->sprites["frog"]);
+    this->testHazard = new Hazard(240, 300, &this->sprites["startTruck"], &this->sprites["midTruck"], &this->sprites["endTruck"], 4, false);
 }
 
 GameWorld::~GameWorld(){
@@ -41,11 +42,13 @@ void GameWorld::draw(){
     //this->sprites["turtleUp"].draw(this->renderer, 0, 0);
     this->drawBackground();
     this->frog->draw(this->renderer);
+    this->testHazard->draw(this->renderer);
     SDL_RenderPresent(this->renderer);
 }
 
 void GameWorld::tick(int dt, VirtKeys* vk){
     this->frog->tick(dt, vk);
+    this->testHazard->tick(dt, vk);
 }
 
 void GameWorld::drawBackground(){

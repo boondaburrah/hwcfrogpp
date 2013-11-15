@@ -9,8 +9,9 @@
 #ifndef __hwcfrog__Hazard__
 #define __hwcfrog__Hazard__
 
-#define HAZARD_DIRECTION_LEFT false
-#define HAZARD_DIRECTION_RIGHT true
+#define HAZARD_DIRECTION_LEFT true
+#define HAZARD_DIRECTION_RIGHT false
+#define HAZARD_DIRECTION_THRESHOLD 200
 
 #include <iostream>
 #include <SDL2/SDL.h>
@@ -23,6 +24,7 @@ class Hazard {
     Sprite* endSprite;
     double x;
     double y;
+    int lastSwitched;
     int length;
     bool direction;
     bool safe;
@@ -32,10 +34,10 @@ public:
     ~Hazard();
     Hazard(double x, double y, Sprite* sprite, int length);
     Hazard(double x, double y, Sprite* left, Sprite* right);
-    Hazard(double x, double y, Sprite* left, Sprite* center, Sprite* right, int length);
+    Hazard(double x, double y, Sprite* left, Sprite* center, Sprite* right, int length, bool safe);
     Hazard(double x, double y, Sprite* safe, Sprite* unsafe, int length);
     bool getSafe();
-    void tick(double, VirtKeys);
+    void tick(double, VirtKeys*);
     void draw(SDL_Renderer*);
 };
 

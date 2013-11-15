@@ -16,11 +16,13 @@
 #include "VirtKeys.h"
 #include "Sprite.h"
 #include "Frog.h"
+#include "Hazard.h"
 
 class GameWorld {
     std::unordered_map<std::string, Sprite> sprites;
     SDL_Renderer* renderer;
     Frog* frog;
+    Hazard* testHazard;
 public:
     GameWorld(SDL_Renderer*);
     ~GameWorld();
