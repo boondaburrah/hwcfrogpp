@@ -53,6 +53,12 @@ Hazard::Hazard(double x, double y, Sprite* safe, Sprite* unsafe, int length){
     this->direction = (this->x > HAZARD_DIRECTION_THRESHOLD) ? HAZARD_DIRECTION_LEFT : HAZARD_DIRECTION_RIGHT;
 }
 
+Hazard::~Hazard(){
+    this->startSprite = NULL;
+    this->endSprite = NULL;
+    this->midSprite = NULL;
+}
+
 bool Hazard::getSafe(void){
     return this->safe;
 }
@@ -64,6 +70,11 @@ void Hazard::tick(double dt, VirtKeys* vk){
         this->lastSwitched = SDL_GetTicks();
     }
     this->x = this->direction ? (this->x + deltaPos) : (this->x - deltaPos);
+    if (!this->direction && (this->x > (320 + (this->length*32)))) {
+        // It's offscreen, we should probably get rid of it.
+    } else if (this->direction && (this->x < (this->length* -32))){
+        // same message as above.
+    }
 }
 
 void Hazard::draw(SDL_Renderer* renderer){
